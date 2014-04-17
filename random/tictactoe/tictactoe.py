@@ -186,8 +186,8 @@ def main():
     for player in players:
         if player.getvalue() == winner:
             print "The winner is %s!!" % player.getname()
-            winner = "a"
-    if str(winner) != "a":
+            
+    if winner == TileType.SPACE:
         print "You tied!!"
 
 main()
