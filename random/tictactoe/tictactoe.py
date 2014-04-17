@@ -148,13 +148,13 @@ def main():
                 # Subtracts 1 for the correct programming array's row #
                 row = int(raw_input("Enter the desired tile's row: ")) - 1
 
-                if row < 1 or row > 3:
+                if row < 0 or row > 2:
                     raise Exception("")
 
                 # Subtracts 1 for the correct programming array's col #
                 col = int(raw_input("Enter the desired tile's col: ")) - 1
 
-                if col < 1 or col > 3:
+                if col < 0 or col > 2:
                     raise Exception("")
 
                 break
